@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load plugins
 require("lazy").setup({
+"windwp/nvim-autopairs",
   "nvim-lua/plenary.nvim",
   "nvim-tree/nvim-web-devicons",
   "nvim-lualine/lualine.nvim",
@@ -90,5 +91,5 @@ require("lazy").setup({
       -- vim.g.loaded_netrw = 1
       vim.g.loaded_netrwPlugin = 1
     end,
-  }
+  }	
 })
