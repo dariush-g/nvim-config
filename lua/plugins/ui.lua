@@ -1,13 +1,12 @@
 vim.opt.termguicolors = true
 vim.wo.number = true
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 
 -- Colorscheme
 
--- vim.cmd.colorscheme("tokyonight")
-vim.cmd.colorscheme("custom")
+vim.cmd.colorscheme("tokyonight")
 
-
+-- vim.cmd.colorscheme("custom")
 
 
 -- Safely require lualine
