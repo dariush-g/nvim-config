@@ -1,21 +1,5 @@
-local lspconfig = require("lspconfig")
-
-vim.diagnostic.config({
-	virtual_text = true,
-	signs = true,
-	underline = true,
+vim.lsp.config('rust_analyzer', {
+  settings = { ['rust-analyzer'] = { ... } },
 })
 
-lspconfig.lua_ls.setup({
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = {"vim"},
-      }
-    }
-  }
-})
-
-lspconfig.pyright.setup({})
-lspconfig.rust_analyzer.setup({})
-lspconfig.clangd.setup({})
+vim.lsp.enable({ 'rust_analyzer', 'lua_ls' })
