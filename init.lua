@@ -22,6 +22,11 @@ vim.keymap.set("i", "[", "[]<Left>")
 vim.keymap.set("i", "|", "||<Left>")
 
 
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
+
 
 -- 1) Make sure you have a Nerd Font installed & selected in your terminal.
 -- 2) Install 'nvim-tree/nvim-web-devicons' (with lazy.nvim/packer/etc).
